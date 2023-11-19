@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28D72FB6-B311-5C22-94B6-D17DEF2B9250" name="TG_Telefone_Usuario">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:06:13 UTC</createdTime>
+<generatorID>CD3F6C95-1468-2C3A-BA5C-75BD19DC8D89</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Telefone" id="4561D44E-20F3-30E4-8C09-5B49E0AF6059">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:06:13 UTC</createdTime>
+<generatorID>21B37DC0-0B1B-E122-ACE2-BE97C62F8CAC</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_DDI" id="50DE9BC0-8E89-BC16-7CEA-36E95D9DC507">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:06:13 UTC</createdTime>
+<generatorID>360E2969-FE31-1D30-8B6D-07406936617A</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_DDD" id="FBB97FA1-35F6-3F6A-F209-29490B9B6DE2">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:06:13 UTC</createdTime>
+<generatorID>1AB00691-D1E6-BB3C-A227-8E6E3CF0B887</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_Telefone" id="70101273-905B-71A1-F69E-F8784D963735">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:06:13 UTC</createdTime>
+<generatorID>226078EB-143E-10A7-B659-FB390F903416</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tp_Telefone" id="EDFF6A5C-86EB-A849-46F2-842A6BF40AF9">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:06:13 UTC</createdTime>
+<generatorID>1A40CB15-2099-470C-1D5D-32A3AE5F0867</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="St_Telefone" id="5C33F202-36D5-8766-2679-3E901D7AD13E">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:06:13 UTC</createdTime>
+<generatorID>68973BFE-5C24-7385-2311-97BD854D39F0</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Cadastro" id="683E328E-65EA-BB3E-BB3F-89999FE105FB">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:06:13 UTC</createdTime>
+<generatorID>798939B9-38B8-1584-11D1-86FD880D2915</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nm_Usuario" id="D02D8D5A-2DAF-F098-89CF-7AF10093B13B">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:06:13 UTC</createdTime>
+<generatorID>F90AB443-94B8-955E-678B-E7015F2A46CB</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_Usuario" id="0A03F18B-F1BE-6971-0757-4972BB490972">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:06:13 UTC</createdTime>
+<generatorID>101397C1-BB4A-8A73-3446-559BAA3B09C2</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F0F0CC7-49B1-FC72-26BA-5D4A9666FF08" referredColumn="D078EB07-EECC-713D-AE80-6048B7C0EC98"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E59FCF8-74BB-F698-B305-1D5307F68FAF" name="TG_Telefone_Usuario_TG_Usuario_FK">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:06:13 UTC</createdTime>
+<generatorID>A4821E9A-104D-5E71-3660-0A6BD74A685C</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A03F18B-F1BE-6971-0757-4972BB490972"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

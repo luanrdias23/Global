@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E6ADAE98-9AEE-B410-C852-35ADF3663436" name="TG_Contato_Usuario">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:39:21 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name=" Id_Contato" id="494ED3B4-673A-A4B8-78A3-BC3E9CEF60EE">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:39:45 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Usuario" id="B972C2BD-F463-5A80-B7FB-34CDE5C8B684">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:04:34 UTC</createdTime>
+<generatorID>32D0D56C-2255-7279-021E-1A47989F5802</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<referedAttribute>88304B88-DAA3-A21D-DDC1-2E41B292800F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Tipo" id="0056EE57-0430-3E32-D26B-9221F02EC0DE">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:05:03 UTC</createdTime>
+<generatorID>6567567D-857C-E8F2-8B09-550631643184</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<referedAttribute>F3FE5BEB-4DC6-7096-705E-164024E7840F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nm_Contato" id="09725D07-E8F3-9AF3-B185-83DC7805D428">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:40:22 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_DDI" id="07CF4DE4-1547-987C-80D7-F42FE0F0EEAD">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:40:59 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_DDD" id="895E819B-2917-2FB4-455A-E5238F18F5F6">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:41:36 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_telefone" id="5F945D77-806C-E9E5-D9EC-235E3CB35B59">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:41:57 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dt_Cadastro" id="5C9D5980-9ADE-D350-6D5F-AA5357E4FFB4">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:42:26 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C51823B6-7B68-8465-EB1A-7FB592412C63" name="TG_Contato_Paciente PK">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:40:21 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>494ED3B4-673A-A4B8-78A3-BC3E9CEF60EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

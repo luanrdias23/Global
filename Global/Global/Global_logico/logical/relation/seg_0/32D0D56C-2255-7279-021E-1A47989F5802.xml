@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Fk_Usuario_Contato" directorySegmentName="seg_0" id="32D0D56C-2255-7279-021E-1A47989F5802">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:04:34 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<sourcePk>0214A3C8-7546-368F-20FA-4D82D0889003</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A928E9FB-C7F7-DB6F-BB2F-A8E122EF96A7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E6ADAE98-9AEE-B410-C852-35ADF3663436</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
