@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2CB09D4A-26F1-CEDD-DF35-2D96B32C6B70" name="TG_Bairro">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 17:54:40 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Bairro " id="E653819A-C6EB-AA51-8A63-741D5DD3E686">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 17:55:01 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Cidade" id="A46CC955-FEC8-61CF-1FA6-1CF709A3D36D">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:04:28 UTC</createdTime>
+<generatorID>FFDA5CE0-6D1F-E2F9-A5A6-63E5A7103E2B</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<referedAttribute>4B46D6B8-843B-8885-D8C2-CDCCEFDC2104</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nm_Bairro" id="7FB45ADB-0D5C-9566-6965-504EBBAE8A9A">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 17:55:18 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nm_Zona" id="79C98639-C973-8FF4-3A73-95379E217191">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 17:55:46 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Zona Leste &apos;" description=""/>
+<valueDef value="Centro" description=""/>
+<valueDef value="Leste" description=""/>
+<valueDef value="Norte" description=""/>
+<valueDef value="Oeste" description=""/>
+<valueDef value="Sul" description=""/>
+<valueDef value="Zona Norte" description=""/>
+<valueDef value="Zona Oeste" description=""/>
+<valueDef value="Zona Sul" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dt_Cadastro" id="51DAF533-DBDF-A6D2-50BA-00A058FF859B">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 17:56:34 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="400CF4D2-FC6A-D503-C85B-F5A8A0B1C82C" name="TG_Bairro PK">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 17:55:17 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E653819A-C6EB-AA51-8A63-741D5DD3E686</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

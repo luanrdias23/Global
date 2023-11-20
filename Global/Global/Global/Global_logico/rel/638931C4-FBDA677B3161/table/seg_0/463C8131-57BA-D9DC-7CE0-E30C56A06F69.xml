@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="463C8131-57BA-D9DC-7CE0-E30C56A06F69" name="Tg_Noticia_Acessada">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>5C308259-16FC-C313-698D-2BDAAB29E686</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Noticia_Acess" id="51ABC2BB-F6EB-1D56-9944-9D22A9FE4659">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>6E3FD55E-9303-04A9-9D14-4E293386830F</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_Usuario" id="5187FFC0-F966-5C19-DF52-6D526FE5A9B4">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>C39C9A21-4FA2-B76D-D1BC-8E2669E3E5FD</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15391801-304F-4AA2-F4C9-720BF6690B6F" referredColumn="32E721FA-10A7-5316-F0CD-C8233A05EB30"/>
+</associations>
+</Column>
+<Column name="Id_Noticia" id="1B699D69-2636-6C9F-5289-7D4AF0FDBBB0">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>77037D21-292C-6994-3EDE-14789B311ECB</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F93FA19-EF0C-D956-E818-BBC75E512080" referredColumn="AD00737B-049D-E514-2A7A-CE86BB6AC14F"/>
+</associations>
+</Column>
+<Column name="Dt_Acesso" id="6A4FA4A8-1370-6BC6-2097-06D8664D2C72">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>D019D17D-D3FA-880A-28EC-98689BFA2FCC</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="770FE140-E4D8-88AF-4305-413E0D37FA90" name="Tg_Noticia_Acessada_PK">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>B27E7836-1709-4CB4-3AD5-956C7424F5BC</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51ABC2BB-F6EB-1D56-9944-9D22A9FE4659"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD08C9B3-86CD-D157-DAE7-F4AFE6F9B269" name="Fk_Noticia_Acessada">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>5B0B2241-EEE1-4AC9-9B2B-420066D4ACB7</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B699D69-2636-6C9F-5289-7D4AF0FDBBB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E6F6BFE-A531-CAEF-F3FA-561C5C038266" name="Fk_Usuario_Noticia_Acessada">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>F6A08A21-CA2D-E3E5-38A2-CC41A0C1E4E4</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5187FFC0-F966-5C19-DF52-6D526FE5A9B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

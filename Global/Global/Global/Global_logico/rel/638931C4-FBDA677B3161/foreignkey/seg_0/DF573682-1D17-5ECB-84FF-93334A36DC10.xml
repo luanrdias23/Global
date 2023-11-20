@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DF573682-1D17-5ECB-84FF-93334A36DC10" containerWithKeyObject="5FA910D6-CCC9-4172-FA04-518936905A44" localFKIndex="608B3049-FA3E-C013-D437-463A30BD8E6D" name="Fk_Tipo_Contato">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>6567567D-857C-E8F2-8B09-550631643184</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<referredTableLongName>TG_Tipo_Contato</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>64CB70EA-FE17-F745-F99B-9F1B07E8AA27</referredTableID>
+<keyObject>73B89ECC-AA7F-515E-8212-7F2D66F0FD3A</keyObject>
+<referredKeyID>73B89ECC-AA7F-515E-8212-7F2D66F0FD3A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Tipo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

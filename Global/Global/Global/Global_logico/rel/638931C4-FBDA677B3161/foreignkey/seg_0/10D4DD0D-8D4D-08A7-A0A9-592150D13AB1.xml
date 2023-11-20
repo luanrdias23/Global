@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="10D4DD0D-8D4D-08A7-A0A9-592150D13AB1" containerWithKeyObject="F40819EB-00DA-8EB5-3AAB-8160B198A7E5" localFKIndex="138822BE-F814-982A-22C7-56DFD6BD4985" name="FK_Logradouro_Endereco">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>3101C3D4-0BDB-EED3-18A2-53C2B3462AB3</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<referredTableLongName>TG_Logradouro</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0B65A1FD-F232-41AF-EC7F-9B938F675A97</referredTableID>
+<keyObject>2F0169DF-0A1B-1AE0-F980-709FA10D962F</keyObject>
+<referredKeyID>2F0169DF-0A1B-1AE0-F980-709FA10D962F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Logradouro</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

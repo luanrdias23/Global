@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64CB70EA-FE17-F745-F99B-9F1B07E8AA27" name="TG_Tipo_Contato">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>1B369C83-2B98-E861-5D39-8A7724B7AC6D</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Tipo" id="C7D8A181-6AC8-DD1E-706E-9467B120A58A">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>F3FE5BEB-4DC6-7096-705E-164024E7840F</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nm_Tipo" id="DEDE9728-F7A7-8266-3FBF-003F93C68274">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>6ACE0E9D-B7C9-872C-D5E3-25E0C749B883</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Inico" id="3FBA703C-FF94-216B-DB81-9FF01618B9FA">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>8433B253-61C2-FA9B-AD56-8E550A199D3C</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Fim" id="A4F0731A-91FE-AD46-D8F7-43869837F099">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>298C17C8-771C-578C-FABF-4662B92540D6</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Cadastro" id="D9D943C2-790A-75CE-70C7-D4D07F56D77A">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>D5806906-C70C-85A3-ECDE-1062803F33F2</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73B89ECC-AA7F-515E-8212-7F2D66F0FD3A" name="TG_Tipo_Contato_PK">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>55DCA79A-6558-3693-786F-C82C2C94E6C2</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7D8A181-6AC8-DD1E-706E-9467B120A58A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

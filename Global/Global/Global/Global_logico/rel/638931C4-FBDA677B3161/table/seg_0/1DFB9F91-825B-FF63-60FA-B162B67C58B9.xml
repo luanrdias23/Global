@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1DFB9F91-825B-FF63-60FA-B162B67C58B9" name="TG_Usuario">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>A928E9FB-C7F7-DB6F-BB2F-A8E122EF96A7</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Usuario" id="32E721FA-10A7-5316-F0CD-C8233A05EB30">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>88304B88-DAA3-A21D-DDC1-2E41B292800F</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nm_Usuario" id="4A5B37F6-1473-60CE-295A-9058A2351820">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>3C08BAED-EF7E-B57D-1473-36D00660E569</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_Cpf" id="68A122C7-6DA6-0A7A-20BA-A5DECD42AC66">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>27321E93-506B-1DED-94DC-E8DF3790B3C4</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nm_RG" id="F2F458C7-D2D9-149F-F03D-8A5C6C25D206">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>AF08FBA2-AEAE-9150-EE19-4048C0C81C4C</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Nascimento" id="112C7058-5248-8E46-0649-F1D29A5E733F">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>5A64FCAA-446B-5FDE-60AF-1FBC02BAF861</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fl_Genero" id="B71FF432-6BC7-8B0F-F9C8-017598DAD9B6">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>5CEEAAC1-A12C-7C48-7308-E29193064E4C</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Masculino &apos;" description="genero masculino "/>
+<valueDef value="Feminino" description="genero feminino "/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Cadastro" id="32BC2C88-7042-9864-BF8C-C726B3637CE6">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>E1B588C6-2F8B-494C-6948-3C3BC832D4AB</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nm_Email" id="4BDE7B63-4461-502D-43F4-116658E6537C">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>B067EAFF-40DF-01E2-3347-7A6D701CECAA</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nm_Senha" id="74E2102E-FE56-03BD-0488-8048AC564D6D">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>1514BD9E-977F-9D0F-160B-C08ADF4C11FD</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2DF0405D-98AB-DA76-0DCC-75F0799C7030" name="TG_Paciente_PK">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>0214A3C8-7546-368F-20FA-4D82D0889003</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32E721FA-10A7-5316-F0CD-C8233A05EB30"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A988F06A-B876-1286-07E5-57460B736433" name="Uk">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>D938FB2C-B2AC-6743-C811-065AF0C2AED6</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68A122C7-6DA6-0A7A-20BA-A5DECD42AC66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CE61C86-D868-D207-B5F9-7E2510B30933" name="Ukv2">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>AB49F9CC-145B-EB8D-37C2-1EBC2A414B88</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2F458C7-D2D9-149F-F03D-8A5C6C25D206"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

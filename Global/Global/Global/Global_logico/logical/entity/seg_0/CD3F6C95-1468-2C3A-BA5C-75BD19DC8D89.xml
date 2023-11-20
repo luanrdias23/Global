@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CD3F6C95-1468-2C3A-BA5C-75BD19DC8D89" name="TG_Telefone_Usuario">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 19:11:55 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Telefone" id="21B37DC0-0B1B-E122-ACE2-BE97C62F8CAC">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 19:12:30 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Usuario" id="101397C1-BB4A-8A73-3446-559BAA3B09C2">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 14:02:14 UTC</createdTime>
+<generatorID>A4821E9A-104D-5E71-3660-0A6BD74A685C</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<referedAttribute>88304B88-DAA3-A21D-DDC1-2E41B292800F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_DDI" id="360E2969-FE31-1D30-8B6D-07406936617A">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 19:12:50 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_DDD" id="1AB00691-D1E6-BB3C-A227-8E6E3CF0B887">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 19:13:29 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_Telefone" id="226078EB-143E-10A7-B659-FB390F903416">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 19:13:46 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tp_Telefone" id="1A40CB15-2099-470C-1D5D-32A3AE5F0867">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 19:14:08 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="St_Telefone" id="68973BFE-5C24-7385-2311-97BD854D39F0">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 19:14:35 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dt_Cadastro" id="798939B9-38B8-1584-11D1-86FD880D2915">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 19:15:04 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

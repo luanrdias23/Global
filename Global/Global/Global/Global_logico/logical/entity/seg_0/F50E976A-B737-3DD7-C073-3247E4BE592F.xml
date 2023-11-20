@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F50E976A-B737-3DD7-C073-3247E4BE592F" name="TG_Logradouro">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 17:59:14 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Logradouro" id="A166C67B-DDEB-96DC-B52C-1B27E3213B5D">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 17:59:33 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Bairro " id="7FA67343-9623-F919-0A5B-737565DDC541">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:04:57 UTC</createdTime>
+<generatorID>703E360B-191D-4DFE-D8A5-B32361F2B7C2</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<referedAttribute>E653819A-C6EB-AA51-8A63-741D5DD3E686</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nm_Logradouro" id="1E9FB87D-1DB3-1EE3-73A4-F0D26126EEA9">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 17:59:56 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_CEP" id="89FBE7E4-E733-B1CA-96A4-991CF556A81F">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:00:27 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dt_Cadastro" id="FDABFCA6-9664-6043-F9B4-F05752B23DD3">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:00:49 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EBF00740-67A0-FD4B-33F1-29D609E673A8" name="TG_Logradouro PK">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 17:59:54 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A166C67B-DDEB-96DC-B52C-1B27E3213B5D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

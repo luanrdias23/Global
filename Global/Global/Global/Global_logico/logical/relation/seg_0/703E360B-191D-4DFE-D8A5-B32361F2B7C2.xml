@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_Bairro_Logradouro" directorySegmentName="seg_0" id="703E360B-191D-4DFE-D8A5-B32361F2B7C2">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:04:57 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<sourcePk>400CF4D2-FC6A-D503-C85B-F5A8A0B1C82C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2CB09D4A-26F1-CEDD-DF35-2D96B32C6B70</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F50E976A-B737-3DD7-C073-3247E4BE592F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

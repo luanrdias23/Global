@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A928E9FB-C7F7-DB6F-BB2F-A8E122EF96A7" name="TG_Usuario">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:16:32 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Usuario" id="88304B88-DAA3-A21D-DDC1-2E41B292800F">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:16:56 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nm_Usuario" id="3C08BAED-EF7E-B57D-1473-36D00660E569">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:17:14 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_Cpf" id="27321E93-506B-1DED-94DC-E8DF3790B3C4">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:17:47 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nm_RG" id="AF08FBA2-AEAE-9150-EE19-4048C0C81C4C">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:21:23 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dt_Nascimento" id="5A64FCAA-446B-5FDE-60AF-1FBC02BAF861">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:22:33 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fl_Genero" id="5CEEAAC1-A12C-7C48-7308-E29193064E4C">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:23:22 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Masculino &apos;" description="genero masculino "/>
+<valueDef value="Feminino" description="genero feminino "/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dt_Cadastro" id="E1B588C6-2F8B-494C-6948-3C3BC832D4AB">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:27:31 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nm_Email" id="B067EAFF-40DF-01E2-3347-7A6D701CECAA">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 17:41:47 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nm_Senha" id="1514BD9E-977F-9D0F-160B-C08ADF4C11FD">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 17:42:12 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0214A3C8-7546-368F-20FA-4D82D0889003" name="TG_Paciente PK">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:17:13 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>88304B88-DAA3-A21D-DDC1-2E41B292800F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="D938FB2C-B2AC-6743-C811-065AF0C2AED6" name="Uk">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:19:33 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="false"/>
+</engineerTo>
+<newElementsIDs>27321E93-506B-1DED-94DC-E8DF3790B3C4</newElementsIDs>
+<usedAttributes>
+<attributeRef>27321E93-506B-1DED-94DC-E8DF3790B3C4</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="AB49F9CC-145B-EB8D-37C2-1EBC2A414B88" name="Ukv2">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:20:59 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="false"/>
+</engineerTo>
+<newElementsIDs>AF08FBA2-AEAE-9150-EE19-4048C0C81C4C</newElementsIDs>
+<usedAttributes>
+<attributeRef>AF08FBA2-AEAE-9150-EE19-4048C0C81C4C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

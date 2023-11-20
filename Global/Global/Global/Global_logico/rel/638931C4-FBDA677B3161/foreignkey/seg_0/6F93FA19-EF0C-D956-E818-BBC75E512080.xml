@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6F93FA19-EF0C-D956-E818-BBC75E512080" containerWithKeyObject="463C8131-57BA-D9DC-7CE0-E30C56A06F69" localFKIndex="CD08C9B3-86CD-D157-DAE7-F4AFE6F9B269" name="Fk_Noticia_Acessada">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>5B0B2241-EEE1-4AC9-9B2B-420066D4ACB7</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<referredTableLongName>Tg_Noticia</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>76D7F77C-A2D0-E252-11C2-8DF60305BBE9</referredTableID>
+<keyObject>8A5FEF91-7B77-A5EA-85E1-C8490BD181D0</keyObject>
+<referredKeyID>8A5FEF91-7B77-A5EA-85E1-C8490BD181D0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Noticia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

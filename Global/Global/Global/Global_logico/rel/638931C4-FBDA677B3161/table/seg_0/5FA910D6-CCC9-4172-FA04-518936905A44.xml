@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FA910D6-CCC9-4172-FA04-518936905A44" name="TG_Contato_Usuario">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>E6ADAE98-9AEE-B410-C852-35ADF3663436</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Contato" id="CDFDC1A2-85B1-FA92-9343-A4FED8798DB9">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>494ED3B4-673A-A4B8-78A3-BC3E9CEF60EE</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_Usuario" id="184494D8-305F-A817-6A4E-FC6747C5BA97">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>B972C2BD-F463-5A80-B7FB-34CDE5C8B684</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6FBC634-BCCB-564C-C9C8-2ADDE9034A94" referredColumn="32E721FA-10A7-5316-F0CD-C8233A05EB30"/>
+</associations>
+</Column>
+<Column name="Id_Tipo" id="6DF2DB37-CB77-2F86-37EA-264435BC2F3B">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>0056EE57-0430-3E32-D26B-9221F02EC0DE</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF573682-1D17-5ECB-84FF-93334A36DC10" referredColumn="C7D8A181-6AC8-DD1E-706E-9467B120A58A"/>
+</associations>
+</Column>
+<Column name="Nm_Contato" id="C6340A84-18EE-A17B-1672-3CC7C836A031">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>09725D07-E8F3-9AF3-B185-83DC7805D428</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_DDI" id="6B7379E5-483B-BB31-F666-DA9C6B84D043">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>07CF4DE4-1547-987C-80D7-F42FE0F0EEAD</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_DDD" id="F933BB1C-A65C-5F33-46BE-617F234CC1D9">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>895E819B-2917-2FB4-455A-E5238F18F5F6</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_telefone" id="3F1F7746-52EA-B395-48F9-5DCC65A7F026">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>5F945D77-806C-E9E5-D9EC-235E3CB35B59</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Cadastro" id="487B5283-3D88-636D-D536-A15D89A1A589">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>5C9D5980-9ADE-D350-6D5F-AA5357E4FFB4</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="110B13B9-B1F3-2096-8ACC-066F8FFF89B2" name="TG_Contato_Paciente_PK">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>C51823B6-7B68-8465-EB1A-7FB592412C63</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDFDC1A2-85B1-FA92-9343-A4FED8798DB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="608B3049-FA3E-C013-D437-463A30BD8E6D" name="Fk_Tipo_Contato">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>6567567D-857C-E8F2-8B09-550631643184</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DF2DB37-CB77-2F86-37EA-264435BC2F3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0BB4F016-47E9-7B54-737D-347236AEF633" name="Fk_Usuario_Contato">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 18:17:35 UTC</createdTime>
+<generatorID>32D0D56C-2255-7279-021E-1A47989F5802</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="184494D8-305F-A817-6A4E-FC6747C5BA97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="CCB969D7-98C0-519D-9E64-DFF2EA3CC61C">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 17:40:12 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

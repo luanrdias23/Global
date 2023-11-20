@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="621C7C52-F327-3E01-224C-FBADCA9AC5C8">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 17:40:12 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

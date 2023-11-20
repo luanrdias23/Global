@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Fk_Noticia_Acessada" directorySegmentName="seg_0" id="5B0B2241-EEE1-4AC9-9B2B-420066D4ACB7">
+<createdBy>davif</createdBy>
+<createdTime>2023-11-19 17:48:13 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<sourcePk>7B81BEBB-A33D-681B-B6E5-3A91B93DADD5</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>417CEEF4-0CC4-C99F-91F4-D7631EE35E71</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5C308259-16FC-C313-698D-2BDAAB29E686</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

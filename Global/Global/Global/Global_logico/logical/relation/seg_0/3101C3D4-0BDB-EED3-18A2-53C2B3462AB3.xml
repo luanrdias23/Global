@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_Logradouro_Endereco" directorySegmentName="seg_0" id="3101C3D4-0BDB-EED3-18A2-53C2B3462AB3">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-17 18:29:45 UTC</createdTime>
+<ownerDesignName>Global_logico </ownerDesignName>
+<engineerTo>
+<item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
+</engineerTo>
+<sourcePk>EBF00740-67A0-FD4B-33F1-29D609E673A8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F50E976A-B737-3DD7-C073-3247E4BE592F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>74A44710-B146-BCBD-4A89-733D51E9DADF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
