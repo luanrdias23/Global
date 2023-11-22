@@ -16,8 +16,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Id_Logradouro" id="C386617F-AA9F-F9CB-9A62-CC764DD9D19E">
@@ -29,7 +29,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -118,7 +118,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -139,7 +139,7 @@
 <colUsage columnID="5CFF0134-E5FB-2133-4775-C592C80B1F40"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9CE91B43-9992-BB0B-6AE8-9F7E90F877C4" name="TG_Endereco_Usuario_TG_Logradouro_FK">
+<ind_PK_UK id="9CE91B43-9992-BB0B-6AE8-9F7E90F877C4" name="FK_Logradouro_Endereco">
 <createdBy>davif</createdBy>
 <createdTime>2023-11-19 14:06:13 UTC</createdTime>
 <generatorID>3101C3D4-0BDB-EED3-18A2-53C2B3462AB3</generatorID>
@@ -150,7 +150,7 @@
 <colUsage columnID="C386617F-AA9F-F9CB-9A62-CC764DD9D19E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7731DADD-8259-7414-0699-42D42EF165E5" name="TG_Endereco_Usuario_TG_Usuario_FK">
+<ind_PK_UK id="7731DADD-8259-7414-0699-42D42EF165E5" name="Fk_Usuario_Endereco">
 <createdBy>davif</createdBy>
 <createdTime>2023-11-19 14:06:13 UTC</createdTime>
 <generatorID>C1B77E17-920A-67BE-06FE-DC5F4FCC10D3</generatorID>

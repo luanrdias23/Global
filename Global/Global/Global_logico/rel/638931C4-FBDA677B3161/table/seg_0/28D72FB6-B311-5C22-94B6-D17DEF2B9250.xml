@@ -16,8 +16,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Nr_DDI" id="50DE9BC0-8E89-BC16-7CEA-36E95D9DC507">
@@ -112,7 +112,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -121,7 +121,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="2E59FCF8-74BB-F698-B305-1D5307F68FAF" name="TG_Telefone_Usuario_TG_Usuario_FK">
+<ind_PK_UK id="2E59FCF8-74BB-F698-B305-1D5307F68FAF" name="Fk_Usuario_Telefone">
 <createdBy>davif</createdBy>
 <createdTime>2023-11-19 14:06:13 UTC</createdTime>
 <generatorID>A4821E9A-104D-5E71-3660-0A6BD74A685C</generatorID>

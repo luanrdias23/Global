@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6B528E20-C53F-69FA-07B2-C2C65833D7E7" containerWithKeyObject="ED1D2541-7F03-B4EB-F2B1-731E2CDD1D60" localFKIndex="7731DADD-8259-7414-0699-42D42EF165E5" name="Fk_Usuario_Endereco">
-<createdBy>davif</createdBy>
-<createdTime>2023-11-19 14:06:13 UTC</createdTime>
-<generatorID>C1B77E17-920A-67BE-06FE-DC5F4FCC10D3</generatorID>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="45320BD1-C5F5-1D33-BD6F-24531C6FFA9F" containerWithKeyObject="589E4B72-74B7-0B01-AAEF-46199BDAC58A" localFKIndex="0DDD10A0-DD8E-9F21-ABBC-902DB0DB38B3" name="Fk_Usuario_Noticia_Acessada">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-22 01:08:49 UTC</createdTime>
+<generatorID>F6A08A21-CA2D-E3E5-38A2-CC41A0C1E4E4</generatorID>
 <ownerDesignName>Global_logico </ownerDesignName>
 <referredTableLongName>TG_Usuario</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

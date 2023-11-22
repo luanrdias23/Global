@@ -16,8 +16,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Nm_Usuario" id="D103B1CC-9988-211B-3002-04FAD99A5038">
@@ -62,6 +62,7 @@
 <createdTime>2023-11-19 14:06:13 UTC</createdTime>
 <generatorID>5A64FCAA-446B-5FDE-60AF-1FBC02BAF861</generatorID>
 <ownerDesignName>Global_logico </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -73,6 +74,7 @@
 <createdTime>2023-11-19 14:06:13 UTC</createdTime>
 <generatorID>5CEEAAC1-A12C-7C48-7308-E29193064E4C</generatorID>
 <ownerDesignName>Global_logico </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -84,77 +86,40 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Ds_Escolaridade" id="24D3B72E-DAC9-E7C9-6B98-1E0D26E05881">
-<createdBy>davif</createdBy>
-<createdTime>2023-11-19 14:06:13 UTC</createdTime>
-<generatorID>16C1ED82-8705-8211-0CE9-A67028DB5651</generatorID>
-<ownerDesignName>Global_logico </ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Ds_Estado_Civil" id="9B516FD7-E328-2553-2334-D35C43A23C57">
-<createdBy>davif</createdBy>
-<createdTime>2023-11-19 14:06:13 UTC</createdTime>
-<generatorID>8852C541-85B6-80F4-2BF9-8751EF58E7DC</generatorID>
-<ownerDesignName>Global_logico </ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>25</dataTypeSize>
-<ownDataTypeParameters>25,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Nm_Grupo_Sanguineo" id="059EEED8-FACC-543E-A992-095F27F8126A">
-<createdBy>davif</createdBy>
-<createdTime>2023-11-19 14:06:13 UTC</createdTime>
-<generatorID>FAC569DC-B2D7-48B8-15F8-ECA5AB914545</generatorID>
-<ownerDesignName>Global_logico </ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>5</dataTypeSize>
-<ownDataTypeParameters>5,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Nr_Altura" id="A7263DDC-CADE-A96A-E7A4-16E3740A0C4B">
-<createdBy>davif</createdBy>
-<createdTime>2023-11-19 14:06:13 UTC</createdTime>
-<generatorID>A307D14E-1BE8-CBE7-D77E-2EB34BF2E6F9</generatorID>
-<ownerDesignName>Global_logico </ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,3,2</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="Nr_Peso" id="C0F1B2C0-BEC2-D582-D5AA-CEAD59EE6C79">
-<createdBy>davif</createdBy>
-<createdTime>2023-11-19 14:06:13 UTC</createdTime>
-<generatorID>6E56D679-DF63-6EA7-0ABF-7DBBA2A46D94</generatorID>
-<ownerDesignName>Global_logico </ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,4,1</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="Dt_Cadastro" id="A38AD032-795B-450D-3808-80437CEFEC8D">
 <createdBy>davif</createdBy>
 <createdTime>2023-11-19 14:06:13 UTC</createdTime>
 <generatorID>E1B588C6-2F8B-494C-6948-3C3BC832D4AB</generatorID>
 <ownerDesignName>Global_logico </ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nm_Email" id="0CD830B7-5FB7-3B50-67DE-C99099DEAD83">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-22 01:08:49 UTC</createdTime>
+<generatorID>B067EAFF-40DF-01E2-3347-7A6D701CECAA</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nm_Senha" id="1EBB5556-FEFE-BA94-1FA9-152635BF3A1C">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-22 01:08:49 UTC</createdTime>
+<generatorID>1514BD9E-977F-9D0F-160B-C08ADF4C11FD</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

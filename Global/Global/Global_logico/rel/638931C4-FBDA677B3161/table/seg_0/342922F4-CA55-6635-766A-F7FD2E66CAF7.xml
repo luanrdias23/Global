@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="342922F4-CA55-6635-766A-F7FD2E66CAF7" name="Tg_Noticia">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-22 01:08:49 UTC</createdTime>
+<generatorID>417CEEF4-0CC4-C99F-91F4-D7631EE35E71</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Noticia" id="E0B0B36F-1C85-51D2-4BF9-9C07795724E0">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-22 01:08:49 UTC</createdTime>
+<generatorID>34A2FB8E-9B0B-900C-8BD5-7DFE1A551CE9</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nm_Titulo" id="D1F23929-9BFD-84A8-4C87-D6E9DBE34EC0">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-22 01:08:49 UTC</createdTime>
+<generatorID>7040714A-7B64-55F6-E4FE-B548CA061040</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nm_Subtitulo" id="13E53030-E740-BBAC-6D48-551E9C85186C">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-22 01:08:49 UTC</createdTime>
+<generatorID>BC01FAAE-49C3-D01C-3449-987EE534FCDA</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Noticia" id="BF5B8B76-8332-FC77-FEE6-1D0977BC7C4D">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-22 01:08:49 UTC</createdTime>
+<generatorID>31736724-4AE2-4C6A-BB9F-8493C0C14826</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ds_Imagem" id="8EED46B2-9F92-AC0A-7405-787685EEA9F2">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-22 01:08:49 UTC</createdTime>
+<generatorID>C77F7B74-EF14-BBA3-C6BD-C3110DC2244A</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ds_Liink" id="7AF2CAA7-C669-77D8-3649-C93022FCCAFF">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-22 01:08:49 UTC</createdTime>
+<generatorID>2B76D9BC-4814-7596-E545-074AFC96680D</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="050DF0C3-35F5-DE6C-2B72-7881F7EBFEDE" name="Tg_Noticia_PK">
+<createdBy>Dias</createdBy>
+<createdTime>2023-11-22 01:08:49 UTC</createdTime>
+<generatorID>7B81BEBB-A33D-681B-B6E5-3A91B93DADD5</generatorID>
+<ownerDesignName>Global_logico </ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0B0B36F-1C85-51D2-4BF9-9C07795724E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

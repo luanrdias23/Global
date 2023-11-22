@@ -16,11 +16,11 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Id_Estado" id="D6544BA1-3BE1-FED8-3482-7F293D429F82">
+<Column name="ID_Estado" id="D6544BA1-3BE1-FED8-3482-7F293D429F82">
 <createdBy>davif</createdBy>
 <createdTime>2023-11-19 14:06:13 UTC</createdTime>
 <generatorID>9E5CFB9B-EEAF-C109-5F60-FC68641521BF</generatorID>
@@ -29,7 +29,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -121,7 +121,7 @@
 <colUsage columnID="C3DFFA20-5773-CC4E-03D9-3111CBE71D1F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5EC38539-2C82-9399-0E29-E140BC3327F7" name="TG_Cidade_TG_Estado_FK">
+<ind_PK_UK id="5EC38539-2C82-9399-0E29-E140BC3327F7" name="Fk_Estado_Cidade">
 <createdBy>davif</createdBy>
 <createdTime>2023-11-19 14:06:13 UTC</createdTime>
 <generatorID>8BD15922-BC34-AF04-05F4-AC80012B2025</generatorID>

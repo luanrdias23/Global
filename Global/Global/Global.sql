@@ -94,8 +94,8 @@ ALTER TABLE tg_logradouro ADD CONSTRAINT tg_logradouro_pk PRIMARY KEY ( id_logra
 
 CREATE TABLE tg_noticia (
     id_noticia   NUMERIC (10) NOT NULL,
-    nm_titulo    VARCHAR2(200) NOT NULL,
-    nm_subtitulo VARCHAR2(200) NOT NULL,
+    nm_titulo    VARCHAR2(300) NOT NULL,
+    nm_subtitulo VARCHAR2(300) NOT NULL,
     dt_noticia   DATE NOT NULL,
     ds_imagem    VARCHAR2(400) NOT NULL,
     ds_link      VARCHAR2(400) NOT NULL
@@ -140,9 +140,9 @@ CREATE TABLE tg_usuario (
     nm_usuario    VARCHAR2(30) NOT NULL,
     nr_cpf        NUMBER(12) NOT NULL,
     nm_rg         VARCHAR2(15),
-    dt_nascimento DATE NOT NULL,
-    fl_genero     CHAR(1) NOT NULL,
-    dt_cadastro   DATE NOT NULL,
+    dt_nascimento DATE ,
+    fl_genero     CHAR(1) ,
+    dt_cadastro   DATE ,
     nm_email      VARCHAR2(100) NOT NULL,
     nm_senha      VARCHAR2(100) NOT NULL
 );
@@ -2860,7 +2860,7 @@ ALTER TABLE tg_telefone_usuario
     INSERT INTO tg_usuario (id_usuario, nm_usuario, nr_cpf, nm_rg, dt_nascimento, fl_genero, dt_cadastro, nm_email, nm_senha)
     VALUES (100, 'Ana Lívia Costa', 96977430730, '537923668', TO_DATE('1954-06-20', 'YYYY-MM-DD'), 'F',
             TO_DATE('2022-02-28', 'YYYY-MM-DD'), 'biancada-rosa@example.com', 'DApctCyc@6');
-
+    COMMIT;
 -- inserindo os endereços para os usuarios 
 
 INSERT INTO tg_endereco_usuario (id_endereco, id_logradouro, id_usuario, nr_logradouro, ds_complemento, ds_ponto_ref, dt_inicio, dt_fim, dt_cadastro)
@@ -3361,6 +3361,10 @@ INSERT INTO tg_endereco_usuario (id_endereco, id_logradouro, id_usuario, nr_logr
     INSERT INTO tg_endereco_usuario (id_endereco, id_logradouro, id_usuario, nr_logradouro, ds_complemento, ds_ponto_ref, dt_inicio, dt_fim, dt_cadastro)
     VALUES (100, 100, 100, 8720, 'Itaque delectus saepe.', 'Omnis dolorum corrupti sit.',
             TO_DATE('2022-11-28', 'YYYY-MM-DD'), TO_DATE('2024-05-10', 'YYYY-MM-DD'), TO_DATE('2020-09-26', 'YYYY-MM-DD'));
+ COMMIT;
+      
+
+      -- telefone
 
 
     INSERT INTO tg_telefone_usuario (id_telefone, id_usuario, nr_ddi, nr_ddd, nr_telefone, tp_telefone, st_telefone, dt_cadastro)
@@ -4216,75 +4220,210 @@ VALUES (6, 6, 6, 'aperiam', 243, 271, 1750714313, TO_DATE('2023-02-16', 'YYYY-MM
 
 
     INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (1, 'Accusamus porro ratione.', 'Hic accusamus esse fugit consequuntur perferendis cupiditate sapiente.', TO_DATE('2020-07-12', 'YYYY-MM-DD'), 'https://picsum.photos/140/537', 'https://da.com/');
-    
+    VALUES (
+    1,
+    'Casos de malária na população negra no garimpo têm crescido há 10 anos',
+    'Na população parda, proporção era de 9,3% em 2012; já em 2022, índice aumentou para 24,7%',
+    TO_TIMESTAMP('2023-10-24 04:00', 'YYYY-MM-DD HH24:MI'),
+    'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/24130_7D62277E34AA343D-1.jpg?w=1220&h=674&crop=1',
+    'https://www.cnnbrasil.com.br/nacional/casos-de-malaria-na-populacao-negra-no-garimpo-tem-crescido-ha-10-anos/'
+     );
 
     INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (2, 'Unde ut consequuntur accusantium eum veniam.', 'Aliquid exercitationem corporis debitis nam doloribus modi natus minus minus quasi doloribus.', TO_DATE('2023-04-26', 'YYYY-MM-DD'), 'https://dummyimage.com/591x107', 'http://freitas.com/');
+VALUES (
+    2,
+    'Doenças respiratórias e os cuidados com a troca de estação',
+    'Um dos principais vilões durante a troca de estações são as doenças respiratórias, que precisam de atenção e bastante cuidado.',
+    TO_TIMESTAMP('2023-04-24 04:00', 'YYYY-MM-DD HH24:MI'),
+    'https://conteudo.imguol.com.br/c/entretenimento/73/2018/01/01/respiracao-1514827094779_v2_1920x1280.jpg',
+    'https://www.panvel.com/blog/dicas-de-saude/doencas-respiratorias/'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (3, 'Sequi provident quae reprehenderit.', 'Nisi hic aut beatae cum odio.', TO_DATE('2021-09-19', 'YYYY-MM-DD'), 'https://picsum.photos/839/32', 'https://www.nunes.com/');
+
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    3,
+    'Com mudanças climáticas, doenças causadas por mosquitos avançam pelo mundo',
+    'O aquecimento global cria um cenário perfeito para esses insetos disseminarem dengue, chikungunya e outras infecções já em níveis preocupantes',
+    TO_TIMESTAMP('2023-11-17 20:31', 'YYYY-MM-DD HH24:MI'),
+    'https://saude.abril.com.br/wp-content/uploads/2023/11/497-materia-mosquitos-abre.png?w=1024&h=682&crop=1',
+    'https://saude.abril.com.br/medicina/com-mudancas-climaticas-doencas-causadas-por-mosquitos-avancam-pelo-mundo'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (4, 'Illum quibusdam ad.', 'Explicabo illum quidem quas consectetur mollitia.', TO_DATE('2021-10-23', 'YYYY-MM-DD'), 'https://dummyimage.com/862x206', 'https://www.da.br/');
+
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    4,
+    'Cerca de 1 milhão de pessoas contraíram infecções sexualmente transmissíveis no Brasil em 2019',
+    'Dados levantados pelo IBGE em parceria com o Ministério da Saúde apontam que 0,6% da população com 18 anos ou mais afirmou ter diagnóstico com este tipo de doença',
+    TO_TIMESTAMP('2021-05-07 20:26', 'YYYY-MM-DD HH24:MI'),
+    'https://docway.com.br/wp-content/uploads/2021/12/shutterstock_2091208759-1024x683.jpg',
+    'https://www.gov.br/saude/pt-br/assuntos/noticias/2021/maio/cerca-de-1-milhao-de-pessoas-contrairam-infeccoes-sexualmente-transmissiveis-no-brasil-em-2019'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (5, 'Laudantium fugiat rerum doloremque quas reprehenderit provident.', 'Harum error vel laboriosam dolor non dolores.', TO_DATE('2021-03-11', 'YYYY-MM-DD'), 'https://placekitten.com/459/529', 'http://www.silveira.br/');
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (6, 'Dolorum unde voluptates nihil quos voluptatibus soluta.', 'Eos aliquam atque ipsa iste itaque neque eligendi eaque.', TO_DATE('2021-09-30', 'YYYY-MM-DD'), 'https://placekitten.com/308/180', 'http://fernandes.com/');
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    5,
+    'Como prevenir a gripe? Veja 10 dicas para proteger a sua saúde',
+    'A gripe é uma doença extremamente comum, que está presente em todos os países do mundo. Através de nossos próprios hábitos, frear o contágio é muito desafiador. ',
+    TO_TIMESTAMP('2022-05-27 04:00', 'YYYY-MM-DD HH24:MI'),
+    'https://static.tuasaude.com/media/article/mq/bw/como-evitar-a-gripe_53555_l.jpg',
+    'https://www.benegrip.com.br/saude/prevencao-gripe/como-prevenir-a-gripe'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (7, 'Dicta accusamus sapiente hic nulla modi.', 'Ipsam molestiae dignissimos qui velit incidunt cupiditate eius expedita fuga tenetur illum.', TO_DATE('2023-06-02', 'YYYY-MM-DD'), 'https://dummyimage.com/287x113', 'https://costela.com/');
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (8, 'Expedita expedita hic modi debitis.', 'Commodi molestias nemo ipsam molestias in labore.', TO_DATE('2021-07-07', 'YYYY-MM-DD'), 'https://picsum.photos/675/791', 'https://www.cardoso.com/');
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    6,
+    'Conquistas do SUS no enfrentamento das doenças transmissíveis',
+    'A gripe é uma doença extremamente comum, que está presente em todos os países do mundo. Através de nossos próprios hábitos, frear o contágio é muito desafiador.',
+    TO_TIMESTAMP('2022-05-27 04:00', 'YYYY-MM-DD HH24:MI'),
+    'https://static.tuasaude.com/media/article/mq/bw/como-evitar-a-gripe_53555_l.jpg',
+    'https://www.scielo.br/j/csc/a/qQCnB7Fb4w6NwYQrHFzbmPL/'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (9, 'Dolorem temporibus quo modi saepe nihil.', 'Architecto voluptas tempora soluta sit veniam eveniet quos nulla ducimus.', TO_DATE('2021-08-06', 'YYYY-MM-DD'), 'https://placekitten.com/280/475', 'https://aragao.net/');
+
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    7,
+    'Saiba quais são as doenças mais comuns no Brasil',
+    'Nesse post você vai conhecer as doenças mais comuns no Brasil e como é possível preveni-las. Além disso, vai entender quais são os seus sintomas e como é feito o tratamento de cada uma delas',
+    TO_TIMESTAMP('2021-07-20 04:00', 'YYYY-MM-DD HH24:MI'),
+    'https://policonsultas.com.br/wp-content/uploads/2021/07/destacada.png',
+    'https://policonsultas.com.br/saiba-quais-sao-as-doencas-mais-comuns-no-brasil/'
+);
+
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    8,
+    'Quais são as 5 principais doenças transmitidas por mosquitos?',
+    'Insetos são os animais mais letais do mundo e causam cerca de 700 mil mortes por ano',
+    TO_TIMESTAMP('2023-04-21 14:40', 'YYYY-MM-DD HH24:MI'),
+    'https://summitsaude.estadao.com.br/wp-content/uploads/2023/04/vacinacao-contra-febre-amarela-e-obrigatoria-para-768x508.jpeg',
+    'https://summitsaude.estadao.com.br/novos-medicos/quais-sao-as-5-principais-doencas-transmitidas-por-mosquitos/'
+);
+
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    9,
+    'Repelente: saiba por que paciente com dengue deve usar produto para evitar novos contágios',
+    'Produto ajuda a afastar mosquito, que é o vetor da doença. Piracicaba registrou morte por dengue e 1º caso de chikungunya neste ano. O g1 conversou com profissionais da saúde.',
+    TO_TIMESTAMP('2023-05-15 07:51', 'YYYY-MM-DD HH24:MI'),
+    'https://s2-g1.glbimg.com/C51SSTVr9gxtXctgLB35tqQB15E=/0x0:916x567/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/r/9/IpXeAWSrSptsxzF71VwQ/repelentes.jpg',
+    'https://g1.globo.com/sp/piracicaba-regiao/noticia/2023/05/15/repelente-saiba-por-que-paciente-com-dengue-deve-usar-produto-para-evitar-novos-contagios.ghtml'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (10, 'Magni deleniti quia voluptate minus culpa placeat nulla.', 'Quos nostrum iusto ab nam accusantium beatae dicta praesentium.', TO_DATE('2023-10-14', 'YYYY-MM-DD'), 'https://dummyimage.com/424x355', 'https://das.br/');
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    10,
+    'Da raiva à cólera: as doenças infecciosas que matam mais que o coronavírus',
+    'Do ponto de vista de escala de mortalidade, o coronavírus ainda não compete com uma série de outras doenças infecciosas que existem há mais tempo',
+    TO_TIMESTAMP('2020-02-25 14:36', 'YYYY-MM-DD HH24:MI'),
+    'https://classic.exame.com/wp-content/uploads/2020/02/2020-02-18t121814z_1_lynxmpeg1h0wt_rtroptp_4_china-health.jpg?quality=70&strip=info&w=1024',
+    'https://exame.com/brasil/da-raiva-a-colera-as-doencas-infecciosas-que-matam-mais-que-o-coronavirus/'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (11, 'Sed consequuntur vel aliquid perferendis doloribus.', 'Laborum repudiandae unde veritatis hic quam veritatis officiis.', TO_DATE('2023-10-10', 'YYYY-MM-DD'), 'https://picsum.photos/605/249', 'https://porto.br/');
+
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    11,
+    '5 Maiores pandemias da história',
+    'Conhecer mais sobre as maiores pandemias da história é relevante no contexto em que estamos vivendo. A pandemia do novo coronavírus vem gerando grande apreensão no mundo todo e informar-se sobre situações semelhantes do passado é válido para ter uma compreensão mais plena. ',
+    TO_TIMESTAMP('2021-05-17 04:00', 'YYYY-MM-DD HH24:MI'),
+    'https://cursinhoparamedicina.com.br/wp-content/uploads/2021/09/pandemia-planeta.jpg',
+    'https://cursinhoparamedicina.com.br/blog/saude/5-maiores-pandemias-da-historia/'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (12, 'Consequatur dicta assumenda voluptatum cumque.', 'Sit consequuntur nihil ab vel ea alias nemo cum quod magnam exercitationem.', TO_DATE('2022-07-19', 'YYYY-MM-DD'), 'https://dummyimage.com/703x927', 'http://caldeira.br/');
+
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    12,
+    'Brasil tem 707.286 mortes por complicações da covid.',
+    'Desde o início da pandemia, 38.022.277 foram infectados; novas mortes voltam a crescer depois de uma semana de queda',
+    TO_TIMESTAMP('2023-11-15 16:02', 'YYYY-MM-DD HH24:MI'),
+    'https://static.poder360.com.br/2022/06/Covid19-Vacinaca%CC%83o-Teste-Testagem-CoronaVirus-DF-06Jan2022-47-848x477.jpg',
+    'https://www.poder360.com.br/coronavirus/brasil-tem-707-286-mortes-por-complicacoes-da-covid/'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (13, 'Fugit quos iusto magni quaerat.', 'Nemo beatae deleniti voluptate placeat repudiandae itaque.', TO_DATE('2023-05-18', 'YYYY-MM-DD'), 'https://placekitten.com/71/107', 'http://www.da.br/');
+
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    13,
+    'Febre maculosa: saiba como prevenir a doença transmitida por carrapato',
+    'Prevenção é baseada em evitar o contato com o carrapato-estrela; confira as medidas recomendadas pelo Ministério da Saúde',
+    TO_TIMESTAMP('2023-06-13 15:17', 'YYYY-MM-DD HH24:MI'),
+    'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/06/galeria_febre_maculosa_02.jpg?w=1220&h=674&crop=1',
+    'https://www.cnnbrasil.com.br/saude/febre-maculosa-saiba-como-prevenir-a-doenca-transmitida-por-carrapato/'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (14, 'Incidunt ad soluta nisi consequuntur.', 'Accusantium rerum architecto libero perspiciatis laboriosam a voluptatibus non blanditiis commodi quo.', TO_DATE('2022-07-24', 'YYYY-MM-DD'), 'https://picsum.photos/881/451', 'https://moura.org/');
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    14,
+    'Dia Mundial da Saúde Sexual: prevenção é melhor orientação para viver com segurança',
+    'A Secretaria estadual da Saúde (Sesa) reforça junto à população a importância da prevenção das Infecções Sexualmente Transmissíveis (ISTs)',
+    TO_TIMESTAMP('2023-09-04 16:40', 'YYYY-MM-DD HH24:MI'),
+    'https://www.aen.pr.gov.br/sites/default/arquivos_restritos/files/imagem/2023-09/sesa_fachada.jpg',
+    'https://www.aen.pr.gov.br/Noticia/Dia-Mundial-da-Saude-Sexual-prevencao-e-melhor-orientacao-para-viver-com-seguranca'
+);
+
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    15,
+    'A uma semana do fim da campanha, vacinação contra gripe tem menos de 40% de adesão',
+    'Vacina contra o vírus influenza não é capaz de provocar gripe, ao contrário dos boatos que circulam nas redes sociais todos os anos',
+    TO_TIMESTAMP('2023-05-24 15:07', 'YYYY-MM-DD HH24:MI'),
+    'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/05/vacina_gripe_2023.jpg?w=1220&h=674&crop=1',
+    'https://www.cnnbrasil.com.br/saude/a-uma-semana-do-fim-da-campanha-vacinacao-contra-gripe-tem-menos-de-40-de-adesao/'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (15, 'Labore explicabo perferendis adipisci architecto rerum sequi.', 'Est in quo labore cum ipsam amet deleniti debitis labore eos.', TO_DATE('2022-01-02', 'YYYY-MM-DD'), 'https://placekitten.com/554/690', 'http://www.cardoso.net/');
+
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    16,
+    'A uma semana do fim da campanha, vacinação contra gripe tem menos de 40% de adesão',
+    'Vacina contra o vírus influenza não é capaz de provocar gripe, ao contrário dos boatos que circulam nas redes sociais todos os anos',
+    TO_TIMESTAMP('2023-05-24 15:07', 'YYYY-MM-DD HH24:MI'),
+    'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/05/vacina_gripe_2023.jpg?w=1220&h=674&crop=1',
+    'https://www.cnnbrasil.com.br/saude/a-uma-semana-do-fim-da-campanha-vacinacao-contra-gripe-tem-menos-de-40-de-adesao/'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (16, 'Eum mollitia tenetur.', 'Enim nam perferendis harum soluta qui dignissimos ipsum tenetur eos quo cupiditate.', TO_DATE('2020-04-12', 'YYYY-MM-DD'), 'https://dummyimage.com/512x447', 'http://www.da.com/');    
+
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    17,
+    'Com recorde de mortes e chegada das chuvas, Prefeitura de Franca prepara semana de mobilização contra dengue',
+    'Segundo a administração pública, encontro de casas com criadouros do mosquito Aedes aegypti tem sido frequente, o que traz preocupação ao início de 2023, quando o calor e umidade são mais altos.',
+    TO_TIMESTAMP('2023-11-11 12:23', 'YYYY-MM-DD HH24:MI'),
+    'https://midias.correiobraziliense.com.br/_midias/jpg/2023/01/11/1200x800/1_000_336k99t-27251220.jpg?20230111185952?20230111185952',
+    'https://g1.globo.com/sp/ribeirao-preto-franca/noticia/2022/11/11/com-recorde-de-mortes-e-chegada-das-chuvas-prefeitura-de-franca-prepara-semana-de-mobilizacao-contra-dengue.ghtml'
+);
 
 
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (17, 'Aut magnam molestiae.', 'Eum asperiores delectus dolores ut accusamus voluptatibus.', TO_DATE('2023-07-15', 'YYYY-MM-DD'), 'https://placekitten.com/490/858', 'https://www.fernandes.br/');
 
-
-    INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
-    VALUES (18, 'Sint exercitationem maxime cum.', 'Perferendis excepturi quam numquam sint aspernatur delectus.', TO_DATE('2022-12-09', 'YYYY-MM-DD'), 'https://dummyimage.com/516x810', 'https://duarte.br/');
+INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
+VALUES (
+    18,
+    'Boa notícia: Brasil pode atingir meta da OMS na eliminação de doenças até 2030',
+    'Brasil busca metas da OMS p/ 2030 em HIV, hepatite e hanseníase, diz Dráurio Barreira, diretor do Ministério da Saúde. Incidência zero não é meta, mas compromisso com avanço',
+    TO_TIMESTAMP('2023-11-11 20:50', 'YYYY-MM-DD HH24:MI'),
+    'https://agenciaaids.com.br/site/wp-content/uploads/2023/11/Expo-768x459.png',
+    'https://agenciaaids.com.br/noticia/boa-noticia-brasil-pode-atingir-meta-da-oms-na-eliminacao-de-doencas-ate-2030/'
+);
 
 
     INSERT INTO tg_noticia (id_noticia, nm_titulo, nm_subtitulo, dt_noticia, ds_imagem, ds_link)
@@ -5109,13 +5248,20 @@ JOIN
  JOIN
     tg_usuario u ON na.id_usuario = u.id_usuario
 WHERE
-    u.fl_genero = 'M'
+    u.fl_genero = 'F'
 GROUP BY
     n.id_noticia, n.nm_titulo, n.nm_subtitulo
 HAVING
     COUNT(na.id_noticia_acess) > 0
 ORDER BY
     total_acessos DESC;
+
+
+  --a consulta retorna informações sobre notícias que foram acessadas por usuárias do sexo feminino, exibindo o ID, 
+  --título e subtítulo das notícias, juntamente com o número total de acessos para cada notícia, ordenado pelo número de acessos em ordem decrescente.
+
+
+COMMIT;
 
 
 

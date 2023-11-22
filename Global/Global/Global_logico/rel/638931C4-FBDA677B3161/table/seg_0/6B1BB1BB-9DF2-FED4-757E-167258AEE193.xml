@@ -16,8 +16,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Nm_Logradouro" id="98A6F070-8F07-0E51-A4E9-7FDD31D81D3D">
@@ -76,7 +76,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -97,7 +97,7 @@
 <colUsage columnID="FBC391F3-1D03-9541-1684-B0D6EFF8B318"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CC79CE9A-EFEE-DB55-37A6-6324D3A0A5FA" name="TG_Logradouro_TG_Bairro_FK">
+<ind_PK_UK id="CC79CE9A-EFEE-DB55-37A6-6324D3A0A5FA" name="FK_Bairro_Logradouro">
 <createdBy>davif</createdBy>
 <createdTime>2023-11-19 14:06:13 UTC</createdTime>
 <generatorID>703E360B-191D-4DFE-D8A5-B32361F2B7C2</generatorID>

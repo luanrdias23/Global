@@ -16,8 +16,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Nm_Contato" id="BA1B42A5-59D5-4335-5FBE-4DAFF70DE9CD">
@@ -102,7 +102,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -118,7 +118,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -139,7 +139,7 @@
 <colUsage columnID="57D09681-44CB-D67D-7E8E-51158BF4EBB4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BDED4367-F053-DFFF-E38A-34ADF11E7DE5" name="TG_Contato_Usuario_TG_Tipo_Contato_FK">
+<ind_PK_UK id="BDED4367-F053-DFFF-E38A-34ADF11E7DE5" name="Fk_Tipo_Contato">
 <createdBy>davif</createdBy>
 <createdTime>2023-11-19 14:06:13 UTC</createdTime>
 <generatorID>6567567D-857C-E8F2-8B09-550631643184</generatorID>
@@ -150,7 +150,7 @@
 <colUsage columnID="48A29445-09DC-23BA-3C02-8103AAED8FD2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2634465B-F776-FFE5-8E7A-12C6D22A6A5D" name="TG_Contato_Usuario_TG_Usuario_FK">
+<ind_PK_UK id="2634465B-F776-FFE5-8E7A-12C6D22A6A5D" name="Fk_Usuario_Contato">
 <createdBy>davif</createdBy>
 <createdTime>2023-11-19 14:06:13 UTC</createdTime>
 <generatorID>32D0D56C-2255-7279-021E-1A47989F5802</generatorID>

@@ -16,8 +16,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Id_Cidade" id="EFC848D8-D7B1-CEB7-48C2-58C30B896936">
@@ -29,7 +29,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -109,7 +109,7 @@
 <colUsage columnID="A164D902-1191-46B2-23DC-825416762C3D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1EB8209B-C4CE-05BA-E3B3-176015174AAB" name="TG_Bairro_TG_Cidade_FK">
+<ind_PK_UK id="1EB8209B-C4CE-05BA-E3B3-176015174AAB" name="Fk_Cidade_Bairro">
 <createdBy>davif</createdBy>
 <createdTime>2023-11-19 14:06:13 UTC</createdTime>
 <generatorID>FFDA5CE0-6D1F-E2F9-A5A6-63E5A7103E2B</generatorID>

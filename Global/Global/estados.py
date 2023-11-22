@@ -27,3 +27,4 @@ for id_usuario in range(1, 101):
 # Imprimir as instruções SQL para usuários
 for statement in sql_statements_usuarios:
     print(statement)
+''

@@ -75,6 +75,7 @@
 <engineerTo>
 <item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -87,6 +88,7 @@
 <engineerTo>
 <item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -104,6 +106,7 @@
 <engineerTo>
 <item key="638931C4-FE2E-488C-D13B-FBDA677B3161" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
